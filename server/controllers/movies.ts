@@ -1,0 +1,1 @@
+export const shuffle = (movies: any[]): any[] => movies.sort(() => .5 - Math.random());

@@ -12,7 +12,9 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
+    "dotenv": "^16.0.0",
     "fastify": "^3.9.2",
+    "fastify-static": "^3.3.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
@@ -22,6 +24,7 @@
   "scripts": {
     "startClientDev": "react-scripts start",
     "startServerDev": "node ./server-build/app.js",
+    "build": "yarn run buildServer && yarn run buildClient",
     "buildClient": "react-scripts build",
     "buildServer": "tsc -b ./server",
     "test": "react-scripts test",
@@ -44,5 +47,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.4.0",
+    "prettier": "^2.5.1"
   }
 }
